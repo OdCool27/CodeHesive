@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<Html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CodeHesive</title>
+        <link rel="shortcut icon" type="image/x-icon" href="Asset\codehesive_logo.png" />
+        <link rel="stylesheet" href="stylesheet.css">
+		<script src="script.js"></script>
+    </head>
+    <body>
+		<section id="navhead">
+			<div id="navlogo">
+				<a href="index.html">
+				<picture >
+					<source srcset="Asset\codehesive_logo.png" media="(max-width:600px)">
+					<source srcset="Asset\banner.png">
+					<img src="Asset\banner.png" alt="logo" >
+				</picture>
+				</a>
+			</div>
+			<div class="navigation">
+				<nav>
+					<ul>
+						<li><a href="index.html" class="nav_link">Home</a></li>
+						<li><a href="about.html" class="nav_link">About</a></li>
+						<li><a href="service.html" class="nav_link">Services</a></li>
+						<li><a href="contact.html" class="nav_link">Contact</a></li>
+					</ul>
+				</nav>
+			</div>
+		</section>
+		<section id="intro">
+			<div id="intro_video">
+				<video src="Asset/intro_video.mp4" autoplay muted loop disablePictureInPicture>
+					Intro Video
+				</video>
+			</div>
+		</section>
+
+		<section id="introSection2">
+			<div style="margin:30px;">
+				<h3 style="color:white;">Let's Make Your Business Shine!</h3>
+				<p style="text-align:center; ">Let us elevate your business in the digital world and pave the way for your success. Our team of experts is ready to provide innovative solutions tailored to your unique needs, whether it's creating a stunning website, enhancing your online presence, or streamlining your operations with cutting-edge technology.</p>
+
+				<p style="text-align:center; ">Click the button below to connect with us and take the first step toward transforming your vision into reality.</p>
+
+				<div class="button"><button type="button" class="callToAction" onclick="toggleForm()">FREE Consultation</button></div>
+
+				<div id="statisticsContainer">
+					<div class="fade-out">
+						<h4>Projects Completed</h4>
+						<p>20+</p>
+					</div>
+					<div class="fade-out">
+						<h4>Business Served</h4>
+						<p>15+</p>
+					</div>
+					<div class="fade-out">
+						<h4>Client Satisfaction</h4>
+						<p>94%</p>
+					</div>
+				</div>
+
+				
+				
+
+			</div>
+		</section>
+
+		<section>
+			<div>
+				<h3>A Glimpse of Our Services</h3>
+				<p style="color:black;">See below a brief description of our main servces provided. Feel free to click the link to get more information.</p>
+				<div id="serviceIntro">
+					<div class="fade-out">
+						<h4>Website Design & Creation</h4>
+						<p style="color:black;">Beautiful, user-friendly websites will help your business stand out online. Our team ensures your site is responsive, mobile-friendly, and optimized for performance. From design to development, we create custom websites that are tailored to your needs, engaging your audience and driving conversions. Let us build a website that reflects your brand and helps you grow in the digital world.</p>
+					</div>
+					<div class="fade-out">
+						<h4>Social Media Management & Content Creation</h4>
+						<p style="color:black;">Boost your brand’s online presence with compelling content and strategic social media management. We create eye-catching posts, manage your platforms, and optimize engagement to help you connect with your audience. From content planning to analytics, we ensure your social media drives real results. Let’s build your digital influence together!</p>
+					</div>
+					<div class="fade-out">
+						<h4>App Development (Coming Soon)</h4>
+						<p style="color:black;">Transform your ideas into powerful mobile and web applications! Our upcoming app development services will focus on creating seamless, high-performance apps tailored to your needs. Whether it’s for business, e-commerce, or productivity, we’ll deliver intuitive, user-friendly solutions that engage your audience. Stay tuned for innovation at your fingertips!</p>
+					</div>
+				</div>
+
+			</div>
+			<div class="intro_services">
+
+			</div>
+		</section>
+
+		<div id="contactForm" class="hidden-div">
+			<button class="close-btn" onclick="toggleForm()">&#10006;</button><!--X button for exiting form window-->
+			<div id="formInnerDiv" class="hidden-div">
+				<form>
+					<h3 style="color:rgb(8, 110, 110)">Setup a Free Consultation</h3>
+					
+					<p style="color:black; text-align:center;">Fill out the form below and one of our team members will reach out to you to arrange a date and time for consulation.</p>
+						<div style="display:flex; justify-content: center; align-items: center; width:100%;">
+							<input type="text" name="first_name" placeholder="First Name" class="inputStyle1">
+							<input type="text" name="last_name" placeholder="Last Name" class="inputStyle1">
+						</div>
+						<div style="display:flex; justify-content: center; align-items: center; width:100%;">
+							<input type="number" name="telephone" placeholder="Telephone" class="inputStyle1">
+							<input type="email" name="email" placeholder="Email" class="inputStyle1">
+						</div>
+					<h4 style= "text-align: center;">Services of Interest</h4>
+					<div style="display:flex; justify-content: center; align-items: center;">
+						<div style="display:flex; flex-direction:column; margin:10px 20px;">
+							<div>
+								<input type="checkbox" id="chk1">
+								<label for="chk1">Website Design & Creation</label>
+							</div>
+							<div>
+								<input type="checkbox" id="chk2">
+								<label for="chk2">App Creation</label>
+							</div>
+							<div>
+								<input type="checkbox" id="chk3">
+								<label for="chk3">Social Media Advert Design</label>
+							</div>
+							
+						</div>
+						<div style="display: flex; flex-direction: column; margin:10px;">
+							<div>
+								<input type="checkbox" id="chk4">
+								<label for="chk4">E-Commerce Solutions</label>
+							</div>
+							<div>
+								<input type="checkbox" id="chk5">
+								<label for="chk5">SEO Optimization</label>
+							</div>
+							<div>
+								<input type="checkbox" id="chk6">
+								<label for="chk6">Custom Software Development</label>
+							</div>
+						</div>
+						
+						
+					</div>
+					<div style="display:flex; justify-content:center; align-items:center;">
+						<input class="formButton" type="submit">
+						<input class="formButton" type="reset">
+					</div>
+					
+				</form>
+			</div>
+		</div>
+
+		
+		
+    </body>
+</html>

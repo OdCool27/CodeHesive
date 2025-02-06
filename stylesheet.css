@@ -1,0 +1,312 @@
+html{
+    scroll-behavior: smooth;
+}
+
+html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+    background-color: white;
+    scroll-snap-type: y mandatory;
+}
+
+section{
+    scroll-snap-align: start;
+
+}
+
+h3{ 
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size:34px;
+    text-align: center;
+    line-height: 1;
+    color:rgb(0, 53, 86);
+}
+
+h4{
+    line-height:1;
+    font-size:16px;
+    font-family:'Cambria', 'Cochin', Georgia, Times, 'Times New Roman', serif;
+    text-decoration: underline;
+    text-align:center;
+}
+
+p{
+    font-family:'Cambria', 'Cochin', Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    color:white;
+}
+
+@font-face {
+font-family: PSign;
+src: url(Photograph_Signature.ttf);
+}
+
+#navhead{
+    display: flex;
+    width:100%;
+    height: 120px;
+    z-index:1;
+    background-color: white;
+
+}
+
+#navlogo{
+    flex:1;
+    float:left;
+    margin: 10px;
+}
+
+#navlogo img{
+    height:100px;
+    width:auto;
+}
+
+
+.navigation ul{
+    list-style-type: none;
+    margin-top:50px;
+    
+}
+
+.navigation li{
+    display:inline;
+}
+
+.navigation a{
+    text-decoration: none;
+    margin-right:16px;
+    font-family: Arial, Helvetica, sans-serif;
+    color:darkcyan;
+    font-weight: bold;
+}
+
+.navigation a:hover{
+    transition: 1.0s;
+    color:orangered;
+}
+
+.navigation a:active{
+    color:orangered;
+}
+
+#introSection2{
+    position:relative;
+    display:block;
+    background: linear-gradient(to bottom, rgb(0, 53, 86), rgb(1, 193, 189));
+    width:100%;
+    padding:30px 0;
+}
+
+#statisticsContainer{
+    width:100%;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#statisticsContainer div{
+    width:250px;
+    height:250px;
+    border-radius:100%;
+    border:2px solid white;
+    margin: 40px;
+    padding:20px;
+}
+
+
+
+#statisticsContainer div h4,p{
+    text-align: center;
+    color:white;
+}
+
+#statisticsContainer div p{
+    font-size:60px;
+}
+
+.button{
+    width:100%;
+    align-items:center;
+    justify-content: center;
+    display:flex;
+}
+
+.callToAction{
+    padding:20px 2%;
+    margin:50px;
+    width:18%;
+    min-width:250px;
+    font-size: 24px;
+    font-family:'times new roman';
+    color:white;
+    background-color: orange;
+    border: 2px solid white;
+    border-radius:5px;
+    
+}
+
+.callToAction:hover{
+    transition:0.5s;
+    scale:1.2;
+    background-color: rgb(255, 72, 0);
+
+    
+}
+
+
+
+.intro { width: 100%; height: auto; display: flex; align-items: center; justify-content: center; } 
+#intro_video { width: 100%; position: relative; padding-bottom: 56.25%; /* 16:9 aspect ratio */ overflow: hidden; } 
+#intro_video video { position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; /* Ensures the video covers the entire container */ }
+
+.hidden-div {
+    background-color: rgba(255, 255, 255, 0); /* 70% opacity */
+    z-index:-3;
+}
+
+
+#contactForm {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    top: 0;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 2.0s ease-in-out;
+}
+
+#contactForm.visible {
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.7); /* 70% opacity */
+    transition: background-color 2.0s ease-in-out;
+}
+
+#formInnerDiv {
+    width: 60%;
+    padding: 0 30px;
+    height: 700px;
+    background-size:cover;
+    background-position: center;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 2.0s ease-in-out;
+}
+
+#formInnerDiv.visible {
+    z-index:3;
+    background-color: rgba(255, 255, 255, 1);
+    border: 1px solid gray;
+}
+
+.inputStyle1 {
+    width: 40%;
+    border-radius:5px;
+    margin:10px;
+    
+}
+
+#formInnerDiv form{
+    justify-content: center;
+    align-items: center;
+    padding:10px;
+}
+
+
+/* Close button styles */
+.close-btn {
+    position: absolute;
+    top: 15px;
+    right: 30px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    font-weight: bold;
+    color: #898787;
+    cursor: pointer;
+    z-index: 4;
+    transition: color 0.3s ease;
+}
+
+.close-btn:hover {
+    color: #ff0000; /* Change color on hover */
+}
+
+
+
+.formButton{
+    width:120px;
+    background:linear-gradient(to left, rgb(228, 107, 1), rgb(200, 20, 105));
+    color:rgb(255, 255, 255);
+    border:1px solid black;
+    border-radius:5px;
+    height:40px;
+    margin:20px;
+    cursor:pointer;
+    background-size:200%;
+    background-position: 100% 50%;
+    transition: background-position 0.5s ease, transform 0.2s ease;
+    font-weight:bold;
+}
+
+.formButton:hover{
+    transition:0.5s;
+    transform: scale(1.1);
+    background-position: 0% 50%;
+}
+
+@media screen and (max-width:800px){
+    #formInnerDiv{width:90%;}
+    .inputStyle1{margin:2px;}
+    p, .callToAction{font-size:16px;}
+    h3{font-size:30px;}
+    #statisticsContainer div{width:200px; height:200px;}
+    #statisticsContainer h4{line-height:0;}
+    #serviceIntro div{ height:auto;}
+}
+
+
+/* Initial hidden state */
+.fade-out {
+    opacity: 0;
+    transform: translateY(20px); /* Slightly offset for smooth transition */
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+/* Visible state */
+.fade-in-visible {
+    opacity: 1;
+    transform: translateY(0); /* Moves to the final position */
+}
+
+
+#serviceIntro{
+    width:100%;
+    padding: 0 20px;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#serviceIntro div{
+    border-style:double;
+    border-color: orange;
+    border-width: 7px;
+    flex:1;
+    margin:20px;
+    padding:10px;
+    min-width:220px;
+    background-color:rgba(248, 186, 93, 0.3);
+}
+
+@media screen and (max-width:800px){
+    
+    #serviceIntro div{ padding:0 20px;}
+}
