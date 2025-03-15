@@ -10,130 +10,16 @@
     </head>
     <body> 
 	<!--NAVIGATION BAR-->
-        <div class="nav">
-            <div class="topnav">
-                <div class="logo">
-                    <img src="..\Asset\vapmobile.png" alt="vapfumi-logo" />
-                </div>
-                <div class="socialmedia">
-                    <a href="https://www.facebook.com/profile.php?id=100089073516788/"><img src="..\Asset\facebook-logo.png" alt="facebook" style="width:32px;height:32px;"/></a>
-                    <a href="https://instagram.com/"><img src="..\Asset\instagram-logo.png" alt="instagram" style="width:32px;height:32px;"/></a>
-                    <a href="https://www.linkedin.com/company/vapfumi-concepts-and-solutions/"><img src="..\Asset\linkedin-logo.png" alt="linkedin" style="width:32px;height:32px; margin-right:10px; "/></a>
-                </div>
-            </div>     
-            <div class="bottomnav">
-                <a href="index.html" style="padding-left:10px; margin-right:60px;">Home</a>
-                <a href="services.html" style="margin-right:60px;">Services</a>
-                <a href="contact.html" style="margin-right:60px;">Contact</a>
-				<a href="about.html" style="margin-right:60px;">About</a>
-            </div>
-        </div>
-		<!--PAGE CONTENT-->
-        <div class="home">
-            <div class="serviceintro">
-                		
-            </div>
-			<div class="teamimg">
-                <img src="..\Asset\home.jpg" alt="home-image" style="width:50px; height:50px;" />
-            </div>
-        </div>
-
-		<hr>
-
-		<br><br>
-		<div class="heading" style="text-align:center; margin-top:0;"><span>Services</span></div>
-		
-		<div class="services">
-
-				<div class="slideshow">
-					<div class="slideshow-container"><!--Space for a slideshow-->
-						<div class="mySlides fade">
-						  <div class="numbertext">1 / 4</div>
-						  <img class="slide" src="..\Asset\resedential.jpg" style="width:100%">
-						  <!--<div class="text">Residential Cleaning</div>-->
-						</div>
-
-						<div class="mySlides fade">
-						  <div class="numbertext">2 / 4</div>
-						  <img class="slide" src="..\Asset\commercial.jpg" style="width:100%">
-						  <!--<div class="text">Commercial Cleaning</div>-->
-						</div>
-
-						<div class="mySlides fade">
-						  <div class="numbertext">3 / 4</div>
-						  <img class="slide" src="..\Asset\disinfection.jpg" style="width:100%">
-						  <!--<div class="text">Deep Cleaning & Disinfection</div>-->
-						</div>
-						
-						<div class="mySlides fade">
-						  <div class="numbertext">4 / 4</div>
-						  <img class="slide" src="..\Asset\housekeeping.jpg" style="width:100%">
-						  <!--<div class="text">Housekeeping & Public Area Cleaning</div>-->
-						</div>
-					</div>
-				<br>
-
-					<div style="text-align:center">
-						<span class="dot"></span> 
-						<span class="dot"></span> 
-						<span class="dot"></span>
-						<span class="dot"></span> 		  
-					</div>
-				</div>
+	<section class="section-container">
+		<!-- Content before the lines -->
+		<h1>Section Content</h1>
+		<p>This section is followed by two angled lines.</p>
+	</section>
+	<section class="angled-lines-section">
+		<h2>Your Content Here</h2>
+		<!-- Other content here -->
+	</section>
 	
-			<div class="serviceinfo">
-				<p>Our company provides premium sanitation, housekeeping, and maintenance for residential and commercial properties, with meticulous care tailored to each client. Services include resort cleaning for a luxurious feel, personalized villa care, and restaurant cleaning to keep kitchens and dining areas pristine. We ensure serene, sanitized spa spaces, polished hard surface floors, advanced hotel disinfecting, and flawless housekeeping. We also offer restoration, deep cleaning, and post-construction cleanup to make spaces shine. Our team is dedicated to exceptional service that exceeds expectations.</p>
-
-				<div class="callToAction">
-					<a href="mailto:sales.vapfumi.cs@gmail.com"><button onclick:"document.location='E:/Web%20Dev/Html/Vapfumi%20Consol.html'>Learn More</button></a>
-				</div>	
-				
-			</div>
-		</div>
-		<!--PAGE FOOTER-->
-		<div class="footer">
-		
-			<div class="footerimg">
-				<img src="..\Asset\flogo.png">
-			</div>
-			
-			<div class="footerinfo">
-			
-				<div class="fcontact">
-					<div class="c1"><a href="mailto:sales.vapfumi.cs@gmail.com">sales.vapfumi.cs@gmail.com</a></div>
-					<div class="c2"><a href="tel:876-369-3728">876-369-3728</a></div>
-				</div>
-				
-				<div class="fsocials">
-				<span><a href="https://www.facebook.com/profile.php?id=100089073516788/">Facebook</a></span>
-				<span><a href="https://www.instagram.com/vapfumi?igsh=MWFjZnhxNmswMHY2Nw==">Instagram</a></span>
-				<span><a href="https://www.linkedin.com/company/vapfumi-concepts-and-solutions/">Linkedin</a></span>
-				</div>
-				
-			</div>
-		</div>
-		 <script>
-			let slideIndex = 0;
-			showSlides();
-
-			function showSlides() {
-			  let i;
-			  let slides = document.getElementsByClassName("mySlides");
-			  let dots = document.getElementsByClassName("dot");
-			  for (i = 0; i < slides.length; i++) {
-				slides[i].style.display = "none";  
-			  }
-			  slideIndex++;
-			  if (slideIndex > slides.length) {slideIndex = 1}    
-			  for (i = 0; i < dots.length; i++) {
-				dots[i].className = dots[i].className.replace(" active", "");
-			  }
-			  slides[slideIndex-1].style.display = "block";  
-			  dots[slideIndex-1].className += " active";
-			  setTimeout(showSlides, 3000); // Change image every 3 seconds
-			}
-			
-		</script>
         
     </body>
 </html>
